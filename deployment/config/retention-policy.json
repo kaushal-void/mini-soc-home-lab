@@ -1,0 +1,39 @@
+{
+  "policy": {
+    "ism_template": [
+      {
+        "priority": 100,
+        "index_patterns": [
+          "wazuh-alerts-*",
+          "wazuh-monitoring-*",
+          "wazuh-statistics-*"
+        ]
+      }
+    ],
+    "states": [
+      {
+        "name": "retain",
+        "actions": [],
+        "transitions": [
+          {
+            "state_name": "delete",
+            "conditions": {
+              "min_index_age": "7d"
+            }
+          }
+        ]
+      },
+      {
+        "name": "delete",
+        "actions": [
+          {
+            "delete": {}
+          }
+        ],
+        "transitions": []
+      }
+    ],
+    "default_state": "retain",
+    "description": "Seven-day retention for this educational SOC lab"
+  }
+}

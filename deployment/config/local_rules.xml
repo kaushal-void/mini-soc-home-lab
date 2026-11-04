@@ -1,0 +1,9 @@
+<group name="windows,windows_application,soc_lab,">
+  <rule id="100100" level="3">
+    <if_sid>60600</if_sid>
+    <field name="win.system.providerName">^MiniSOCLab$</field>
+    <field name="win.system.eventID">^777$</field>
+    <description>Mini SOC Lab: harmless Windows Application event for pipeline verification.</description>
+    <group>soc_lab_demo,</group>
+  </rule>
+</group>

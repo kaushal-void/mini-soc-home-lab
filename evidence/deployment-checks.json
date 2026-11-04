@@ -1,0 +1,13 @@
+{
+  "VerifiedAt": "2026-09-23T08:15:17.3085678+05:30",
+  "WazuhVersion": "4.14.7",
+  "DockerTest": "hello-world passed",
+  "Manager": "required daemons running; analysisd config test passed",
+  "Indexer": "authenticated cluster health green, one node",
+  "Dashboard": "User screenshot verifies successful Edge login, overview, and one active agent; detailed alert walkthrough pending",
+  "Bindings": "127.0.0.1 only: 1514,1515,9200,8443",
+  "AlertRetention": "soc-lab-7-days policy applied; delayed deletion not yet observed",
+  "WindowsAgent": "soc-windows (001), native Windows 11 agent 4.14.7: Active verified by manager",
+  "DemonstrationAlerts": "Six indexed alerts verified: rules 554,550,553,554,553,100100; sanitized evidence saved",
+  "CFreeGiB": 174.05
+}

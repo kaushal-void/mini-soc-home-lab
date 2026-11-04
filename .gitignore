@@ -1,0 +1,16 @@
+.env
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+private/
+vendor/
+
+*.env
+*.log
+*.msi
+*.vhdx
+*.bak
+.DS_Store
+
